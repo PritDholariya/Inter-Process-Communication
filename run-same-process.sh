@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Runs BOTH players inside a single Java process (one PID, two threads).
+# This script runs both players inside a single Java process (one PID, two threads).
 set -euo pipefail
 cd "$(dirname "$0")"
 

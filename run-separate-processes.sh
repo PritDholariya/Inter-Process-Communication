@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Runs EACH player in its own Java process (two different PIDs) over TCP.
+# This script runs each player in its own Java process (two different PIDs) over TCP.
 set -euo pipefail
 cd "$(dirname "$0")"
 
