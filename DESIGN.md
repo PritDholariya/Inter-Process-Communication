@@ -100,8 +100,8 @@ no need for anything more complex.
 
 | Class                | What it does                                                                 |
 |----------------------|------------------------------------------------------------------------------|
-| Message              | Holds the text of one message. Immutable, no behaviour.                      |
-| MessageChannel       | Interface — the only thing Player knows about its transport.                 |
+| Message              | Keep the text of one message. Immutable.                                     |
+| MessageChannel       | Interface - the only thing Player knows about its transport.                 |
 | PlayerRole           | Enum: INITIATOR or RESPONDER.                                                |
 | Player               | Runs the conversation loop. Knows nothing about queues, sockets or threads.  |
 | InMemoryChannel      | MessageChannel backed by blocking queues. Used in same-process mode.         |

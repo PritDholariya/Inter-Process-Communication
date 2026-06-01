@@ -125,13 +125,6 @@ It has no idea whether it is talking through a queue or a socket. This means
 the same Player class handles both the single-process and multi-process case
 with no changes — you just plug in a different channel implementation.
 
-```
-Player  ──depends on──▶  MessageChannel  (interface)
-                                ▲
-                   ┌────────────┴────────────┐
-           InMemoryChannel              TcpChannel
-          (blocking queues)            (TCP socket)
-```
 
 A few other decisions worth mentioning since the brief left them open:
 
